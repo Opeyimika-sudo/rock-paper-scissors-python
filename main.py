@@ -19,30 +19,39 @@ def run_game():
             
             if(user_input == "P"):
                 if(computer_input == "P"):
-                    print("This is a draw. You chose %s and the computer chose %s. You have to go again. Goodluck." % (user_input, computer_input))
+                    print("Player(Paper) : CPU(Paper)")
+                    print("This is a draw")
                     run_game()
                 elif(computer_input == "R"):
-                    print("You win. You chose %s and the computer chose %s." % (user_input, computer_input))
+                    print("Player(Paper) : CPU(Rock)")
+                    print("You win!")
                 elif(computer_input == "S"):
-                    print("You lose. You chose %s and the computer chose %s." % (user_input, computer_input))
+                    print("Player(Paper) : CPU(Scissors)")
+                    print("Computer wins.") 
 
             elif(user_input == "S"):
                 if(computer_input == "S"):
-                    print("This is a draw. You chose %s and the computer chose %s. You have to go again. Goodluck." % (user_input, computer_input))
+                    print("Player(Scissors) : CPU(Scissors)")
+                    print("This is a draw")
                     run_game()
                 elif(computer_input == "P"):
-                    print("You win. You chose %s and the computer chose %s." % (user_input, computer_input))
+                    print("Player(Scissors) : CPU(Paper)")
+                    print("You win!")
                 elif(computer_input == "R"):
-                    print("You lose. You chose %s and the computer chose %s." % (user_input, computer_input))
+                    print("Player(Scissors) : CPU(Rock)")
+                    print("Computer wins.") 
 
             elif(user_input == "R"):
                 if(computer_input == "R"):
-                    print("This is a draw. You chose %s and the computer chose %s. You have to go again. Goodluck." % (user_input, computer_input))
+                    print("Player(Rock) : CPU(Rock)")
+                    print("This is a draw")
                     run_game()
                 elif(computer_input == "S"):
-                    print("You win. You chose %s and the computer chose %s." % (user_input, computer_input))
+                    print("Player(Rock) : CPU(Scissors)")
+                    print("You win!")
                 elif(computer_input == "P"):
-                    print("You lose. You chose %s and the computer chose %s." % (user_input, computer_input))
+                    print("Player(Rock) : CPU(Paper)")
+                    print("Computer wins.") 
             
         else:
                 print("Offer a valid option")
